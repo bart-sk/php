@@ -5,3 +5,5 @@
 Alpine linux with rsync, nodejs, yarn, openssh-client, git and PHP
 
 SSH StrictHostKeyChecking is off.
+
+On Dockerhub: https://hub.docker.com/r/bartsk/php/
