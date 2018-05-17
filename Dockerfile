@@ -8,3 +8,5 @@ RUN apk add php7 \
             php7-phar \ 
             curl && \
             curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+
+ADD ./php.ini /etc/php7/php.ini
