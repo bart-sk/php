@@ -8,6 +8,7 @@ RUN apk add php7 \
             php7-phar \ 
             php7-pdo \
             php7-tokenizer \
+            php7-session \
             curl && \
             curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
