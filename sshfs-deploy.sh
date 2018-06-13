@@ -1,8 +1,9 @@
 #!/bin/bash
 MOUNTPATH=$(pwd)/www-server-deploy
 RSYNCPARAM=""
+PWDL=$(pwd)
 
-[ -e .rsyncignore ] && RSYNCPARAM="${RSYNCPARAM}--exclude-from='.rsyncignore' "
+[ -e .rsyncignore ] && RSYNCPARAM="${RSYNCPARAM}--exclude-from=".rsyncignore" --exclude=".rsyncignore" "
 
 [ -e $MOUNTPATH ] && rm -rf $MOUNTPATH
 

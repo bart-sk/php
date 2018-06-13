@@ -5,8 +5,10 @@ RUN apk add php7 \
             php7-iconv \
             php7-openssl \
             php7-json \
-            php7-phar \ 
+            php7-phar \
+            php7-mcrypt \ 
             php7-pdo \
+            php7-dom \
             php7-tokenizer \
             php7-session \
             sshfs \
