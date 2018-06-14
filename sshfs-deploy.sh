@@ -13,7 +13,7 @@ mkdir $MOUNTPATH
 
 sshfs $1:www $MOUNTPATH
 
-rsync -rlvP --update --inplace --no-i-r --progress --exclude=www-server-deploy $RSYNCPARAM . $MOUNTPATH/
+rsync -avzc --no-times --no-perms --no-owner --no-group --exclude=www-server-deploy $RSYNCPARAM . $MOUNTPATH/
 
 fusermount -u $MOUNTPATH
 
