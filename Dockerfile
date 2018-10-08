@@ -11,6 +11,7 @@ RUN apk add php7 \
             php7-dom \
             php7-tokenizer \
             php7-session \
+            php7-ctype \
             sshfs \
             rsync \
             curl && \
