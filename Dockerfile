@@ -12,6 +12,12 @@ RUN apk add php7 \
             php7-tokenizer \
             php7-session \
             php7-ctype \
+            php7-xml \
+            php7-xmlwriter \
+            php7-zip \
+            php7-gd \
+            php7-simplexml \
+            php7-xmlreader \
             sshfs \
             rsync \
             curl && \
