@@ -7,13 +7,11 @@ PWDL=$(pwd)
 
 [ -e $MOUNTPATH ] && rm -rf $MOUNTPATH
 
-[ ! -z $2 ] && RSYNCPARAM="${RSYNCPARAM}--dry-run "
-
 mkdir $MOUNTPATH
 
 sshfs $1:www $MOUNTPATH
 
-rsync -avzc --no-times --no-perms --no-owner --no-group --exclude=www-server-deploy $RSYNCPARAM . $MOUNTPATH/
+rsync -avzc --no-times --no-perms --no-owner --no-group --exclude=www-server-deploy $RSYNCPARAM "${@:2}" . $MOUNTPATH/
 
 fusermount -u $MOUNTPATH
 
