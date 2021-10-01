@@ -1,4 +1,4 @@
-FROM bartsk/alpine
+FROM bartsk/alpine:v1.0.5
 RUN apk add php7 \
             php7-curl \
             php7-mbstring \
