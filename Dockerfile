@@ -1,5 +1,4 @@
 FROM bartsk/alpine:v1.0.5
-RUN curl -vvv https://api-v2.pricemania.sk
 RUN apk add php7 \
             php7-curl \
             php7-mbstring \
